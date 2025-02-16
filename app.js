@@ -2,7 +2,7 @@
 
 const taskInput = document.getElementById("new-task");
 const addButton = document.querySelector("button");
-const incompleteTaskHolder = document.getElementById("incompleteTasks");
+const incompleteTaskHolder = document.getElementById("incomplete-tasks");
 const completedTasksHolder = document.getElementById("completed-tasks");
 
 // Create a new task list item
@@ -47,7 +47,7 @@ const editTask = function () {
     const editInput = listItem.querySelector("input[type=text]");
     const label = listItem.querySelector("label");
     const editBtn = listItem.querySelector(".edit");
-    const isEditMode = listItem.classList.toggle("editMode");
+    const isEditMode = listItem.classList.toggle("edit-mode");
 
     if (isEditMode) {
         editInput.value = label.innerText;

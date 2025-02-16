@@ -1,4 +1,4 @@
-/* Basic Styles */
+/* Ensure each selector and property is on its own line */
 body {
     background-color: #f8f8f8;
     color: #333;
@@ -12,9 +12,11 @@ body {
     margin: 0 auto;
     text-align: right;
 }
+
 .matrix-container img {
     width: 100%;
 }
+
 .matrix-container .more-info {
     font-family: fantasy, cursive;
 }
@@ -68,8 +70,7 @@ button:hover {
     color: #3a3a3a;
 }
 
-/* Headings */
-h3, label[for='new-task'] {
+h3, label[for="new-task"] {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -96,8 +97,7 @@ input[type="text"]:focus {
     color: #333;
 }
 
-/* New Task */
-label[for='new-task'] {
+label[for="new-task"] {
     display: block;
     margin-bottom: 20px;
 }
@@ -106,7 +106,6 @@ input#new-task {
     width: 318px;
 }
 
-/* Task List */
 li {
     overflow: hidden;
     padding: 20px 0;
@@ -144,13 +143,11 @@ button.delete img:hover {
     transform: rotateZ(0);
 }
 
-/* Completed */
 ul#completed-tasks label {
     text-decoration: line-through;
     color: #888;
 }
 
-/* Edit Task */
 ul li input[type=text] {
     display: none;
 }
