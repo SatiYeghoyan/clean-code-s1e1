@@ -50,11 +50,17 @@ const editTask = function () {
     const isEditMode = listItem.classList.toggle("edit-mode");
 
     if (isEditMode) {
+        // Switch to edit mode
         editInput.value = label.innerText;
         editBtn.innerText = "Save";
+        editInput.style.display = "inline-block";
+        label.style.display = "none";
     } else {
+        // Switch to view mode
         label.innerText = editInput.value;
         editBtn.innerText = "Edit";
+        editInput.style.display = "none";
+        label.style.display = "inline-block";
     }
 };
 
